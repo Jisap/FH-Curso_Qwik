@@ -11,7 +11,7 @@ export const PokemonProvider = component$(() => {
         showBackImage: false,
     });
 
-    useContextProvider(PokemonGameContext, pokemonGame);
+    useContextProvider(PokemonGameContext, pokemonGame); // Provider del pokemon
 
     const pokemonList = useStore<PokemonListState>({
         currentPage: 0,
@@ -19,7 +19,7 @@ export const PokemonProvider = component$(() => {
         pokemons: [],
     })
 
-    useContextProvider(PokemonListContext, pokemonList);
+    useContextProvider(PokemonListContext, pokemonList); // Provider de la lista de pokemons
 
     useVisibleTask$(() => {
         console.log('Primer visible task')

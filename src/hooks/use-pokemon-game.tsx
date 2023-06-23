@@ -5,7 +5,7 @@ import { PokemonGameContext } from "~/context";
 
 export const UsePokemonGame = () => {
   
-    const pokemonGame = useContext(PokemonGameContext);
+    const pokemonGame = useContext(PokemonGameContext); // context del pokemon
 
     const changePokemonId = $((value: number) => {
         if ((pokemonGame.pokemonId + value) <= 0) {
@@ -23,7 +23,7 @@ export const UsePokemonGame = () => {
     })
 
     return {
-        pokemonId: useComputed$(() => pokemonGame.pokemonId),
+        pokemonId: useComputed$(() => pokemonGame.pokemonId),               // Estos valores se memorizan y se recalcularán solo si cambian las dependencias en el estado
         showBackImage: useComputed$(() => pokemonGame.showBackImage),
         isPokemonVisible: useComputed$(() => pokemonGame.isPokemonVisible),
 

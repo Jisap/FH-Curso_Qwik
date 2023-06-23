@@ -8,4 +8,4 @@ export interface PokemonGameState {
     isPokemonVisible: boolean
 }
 
-export const PokemonGameContext = createContextId<PokemonGameState>('pokemon.game-context');
+export const PokemonGameContext = createContextId<PokemonGameState>('pokemon.game-context'); // Estado-context del pokemon

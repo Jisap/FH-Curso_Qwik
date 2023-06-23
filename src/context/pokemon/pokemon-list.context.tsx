@@ -10,4 +10,4 @@ export interface PokemonListState {
     pokemons: SmallPokemon[];
 }
 
-export const PokemonListContext = createContextId<PokemonListState>('pokemon.list-context');
+export const PokemonListContext = createContextId<PokemonListState>('pokemon.list-context'); // Estado-context de la lista de pokemons
