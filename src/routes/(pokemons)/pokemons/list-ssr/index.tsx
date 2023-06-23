@@ -4,7 +4,7 @@ import { PokemonImage } from '~/components/pokemons/pokemon-image';
 import { Modal } from '~/components/shared';
 import { getFunFactAboutPokemon } from '~/helpers/get-chat-gpt-response';
 import { getSmallPokemons } from '~/helpers/get-small-pokemons';
-import { SmallPokemon } from '~/interfaces';
+import type { SmallPokemon } from '~/interfaces';
 
 
 export const usePokemonList = routeLoader$<SmallPokemon[]>(async({ query, redirect, pathname }) => {
