@@ -1,9 +1,9 @@
-import { component$, useOnDocument, useStore, useTask$, useVisibleTask$, $, useContext } from '@builder.io/qwik';
+import { component$, useOnDocument, useTask$, $, useContext } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { PokemonImage } from '~/components/pokemons/pokemon-image';
 import { PokemonListContext } from '~/context';
 import { getSmallPokemons } from '~/helpers/get-small-pokemons';
-import { SmallPokemon } from '~/interfaces';
+
 
 
 export default component$(() => {

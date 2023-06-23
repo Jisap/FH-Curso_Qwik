@@ -3,7 +3,7 @@ import { PokemonGameContext } from "~/context";
 
 
 
-export const UsePokemonGame = () => {
+export const usePokemonGame = () => {
   
     const pokemonGame = useContext(PokemonGameContext); // context del pokemon
 

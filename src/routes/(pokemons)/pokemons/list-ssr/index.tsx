@@ -1,5 +1,5 @@
 import { $, component$, useComputed$, useSignal, useStore, useVisibleTask$ } from '@builder.io/qwik';
-import { DocumentHead, Link, routeLoader$, useLocation } from '@builder.io/qwik-city';
+import { type DocumentHead, Link, routeLoader$, useLocation } from '@builder.io/qwik-city';
 import { PokemonImage } from '~/components/pokemons/pokemon-image';
 import { Modal } from '~/components/shared';
 import { getFunFactAboutPokemon } from '~/helpers/get-chat-gpt-response';
