@@ -1,5 +1,5 @@
 import { createContextId } from '@builder.io/qwik';
-import { usePokemonId } from '../../routes/pokemon/[id]/index';
+//import { usePokemonId } from '../../routes/pokemon/[id]/index';
 
 
 export interface PokemonGameState {
